@@ -1,0 +1,457 @@
+/**
+ * Default styles
+ */
+@import "vars"
+@import "fonts"
+html, body
+  width: 100%
+  height: 100%
+h1, h2, h3, h4, h5, h6, ul, p, i
+  padding: 0
+  margin: 0
+  display: block
+ul
+  list-style: none
+\:focus, \:active
+  outline: 0 !important
+a, a:focus, a:active, a:hover
+  text-decoration: none
+
+
+
+@import "media"
+.active
+  color: #fd00bb
+.container
+  margin: 0 auto
+  width: 1171px
+.header
+  min-height: 100vh
+  background: url("../img/bg.png") no-repeat top
+
+
+
+
+
+
+.menu
+  height: 50px
+  display: grid
+  grid-template-columns: 64px 345px 758px
+  align-items: center
+  color: #777777
+  font-family: "Proxima Nova - Semibold"
+  font-size: 16px
+  font-weight: 600
+  &-logo
+    display: inline-block
+
+  &-list
+    display: flex
+    justify-content: space-between
+
+  &-auth
+    display: flex
+    justify-content: flex-end
+    &__li
+      margin-right: 30px
+.info
+  margin-top: 57px
+  display: block
+  &-year
+    display: inline-block
+    transform: rotate(-90deg)
+    color: #00e4ff
+    font-family: "Proxima Nova - Regularg"
+    font-size: 50px
+    font-weight: 700
+    letter-spacing: 1.25px
+  &-title
+    margin-top: 17px
+    text-align: center
+  &-date
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #00e4ff
+    font-family: "Proxima Nova - Black"
+    font-size: 20px
+    font-weight: 900
+    letter-spacing: 1px
+  &-button
+    margin-top: 52px
+    text-align: center
+    &__btn
+      font-family: "Proxima Nova - Regular"
+      width: 280px
+      height: 70px
+      border: 0
+      border-radius: 8px
+      background-image: linear-gradient(180deg, #ffc649 0%, #fd00bb 100%)
+      color: #ffffff
+      font-size: 20px
+      font-weight: 700
+      text-transform: uppercase
+  &-sponsors
+    margin-top: 51px
+    text-align: center
+  &-mouse
+    margin-top: 44px
+    padding-bottom: 21px
+    text-align: center
+
+.about
+  height: 820px
+  padding-top: 89px
+  background: url("../img/1_Background (1).png") no-repeat top center
+  &-wrap
+    display: grid
+    padding-left: 100px
+    grid-template-columns: 490px 293px 320px
+
+  &-info
+    display: inline-block
+    transform: rotate(-90deg)
+    color: #ff9e00
+    font-family: "Proxima Nova - Semibold"
+    font-size: 16px
+    font-weight: 600
+    letter-spacing: 0.8px
+    text-transform: uppercase
+
+  &-title
+    display: inline-block
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 60px
+    font-weight: 700
+    letter-spacing: 3px
+    line-height: 50px
+    &__orange
+      color: #ff9e00
+  &-desc
+    padding-top: 16px
+    &__event
+      text-align: left
+      color: #ffffff
+      font-family: "Proxima Nova - Regular"
+      font-size: 18px
+      font-weight: 400
+      letter-spacing: 0.9px
+      line-height: 26px
+
+    &__wrap
+      height: 100px
+      font-family: "Proxima Nova - Regular"
+      &:nth-child(2)
+        margin-top: 56px
+      &:nth-child(3)
+        margin-top: 56px
+
+    &__numb
+      color: #00e4ff
+      font-size: 50px
+      font-weight: 700
+    &__text
+      color: #ff9e00
+      font-size: 20px
+      font-weight: 700
+      line-height: 28px
+  &-timetable
+    margin-top: 132px
+    padding-left: 92px
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 60px
+    font-weight: 400
+    letter-spacing: 3px
+
+.timetable
+  height: 439px
+  background-color: #ffffff
+  &-wrap
+    margin-top: 33px
+
+  &-line
+    width: 100%
+    height: 40px
+    border-radius: 20px
+    background-image: linear-gradient(270deg, #face37 0%, #f219bf 19%, #483bfa 40%, #483bfa 65%, #f81e3b 100%)
+    &__list
+      display: grid
+      grid-template-columns: 25% 25% 25% 25%
+      color: #ffffff
+      font-family: "Proxima Nova - Regular"
+      font-size: 18px
+      font-weight: 700
+      letter-spacing: 0.9px
+      line-height: 24px
+  &-list
+    display: grid
+    grid-template-columns: 25% 25% 25% 25%
+    font-family: "Proxima Nova - Regular"
+    &__li
+
+  &-text
+    margin-top: 10px
+    padding-bottom: 81px
+    text-align: center
+    color: #f81e3b
+    font-family: "Proxima Nova - Regular"
+    font-size: 20px
+    font-weight: 700
+    line-height: 28px
+
+.loot
+  background: url("../img/1_Background (1).png")
+  height: 800px
+  &-wrap
+    display: inline-block
+  &-con
+    display: flex
+    align-items: center
+
+  &-title
+    display: inline-block
+    transform: rotate(-90deg)
+    color: #fd00bb
+    font-family: "Proxima Nova - Regular"
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.8px
+    text-transform: uppercase
+  &-headline
+
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 60px
+    font-weight: 400
+    letter-spacing: 3px
+    line-height: 50px
+  &-info
+    margin-top: 20px
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 18px
+    font-weight: 400
+    letter-spacing: 0.9px
+    line-height: 26px
+  &-blocks
+    margin-top: 44px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
+  &-block
+    text-align: center
+    &__img
+      margin-top: 10px
+    &__numb
+      margin-top: 12px
+      color: #f219bf
+      font-family: "Proxima Nova - Black"
+      font-size: 90px
+      font-weight: 900
+      letter-spacing: 4.5px
+
+    &__place
+      color: #f219bf
+      font-family: "Proxima Nova - Black"
+      font-size: 20px
+      font-weight: 900
+      letter-spacing: 1px
+
+.judges-title
+  display: inline-block
+  transform: rotate(-90deg)
+  color: #01cee6
+  font-family: "Proxima Nova - Regular"
+  font-size: 16px
+  font-weight: 400
+  letter-spacing: 0.8px
+  text-transform: uppercase
+.judges-quest
+  display: inline-block
+  color: #ffffff
+  font-family: "Proxima Nova - Regular"
+  font-size: 60px
+  font-weight: 400
+  letter-spacing: 3px
+  line-height: 50px
+.judges-desc
+  color: #ffffff
+  font-family: "Proxima Nova - Regular"
+  font-size: 18px
+  font-weight: 400
+  letter-spacing: 0.9px
+  line-height: 26px
+
+.slider
+  background: url("../img/1_Background (1).png")
+  height: 700px
+  padding-top: 100px
+
+  position: relative
+  &-arrows
+    display: inline-block
+    position: absolute
+    top: 0
+    right: 100px
+    &__left
+      display: inline-block
+      margin-right: 30px
+      cursor: pointer
+
+    &__right
+      display: inline-block
+      cursor: pointer
+  &-block
+    display: inline-block
+    margin-right: 177px
+
+
+    &__name
+      margin-top: 31px
+      color: #ffffff
+      font-family: "Proxima Nova - Semibold"
+      font-size: 20px
+      font-weight: 600
+      line-height: 28px
+    &__company
+      color: #fd2aa2
+      font-family: "Proxima Nova - Black"
+      font-size: 30px
+      font-weight: 900
+      letter-spacing: 1.5px
+      text-transform: uppercase
+.part
+  padding-top: 270px
+  text-align: center
+  background: url("../img/1_Background (1).png")
+
+  &-year
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 20px
+    font-weight: 700
+    letter-spacing: 1px
+    text-transform: uppercase
+  &-logo
+    margin-top: 31px
+
+
+  &-text
+    margin-top: 21px
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 18px
+    font-weight: 400
+    letter-spacing: 0.9px
+    line-height: 26px
+  &-btn
+    margin-top: 12px
+    border: 0
+    width: 280px
+    height: 70px
+    border-radius: 8px
+    background-image: linear-gradient(180deg, #5549ff 0%, #c300fd 100%)
+
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+.sponsors
+  padding-top: 330px
+  background: url("../img/1_Background (1).png")
+  height: 900px
+
+  &-title
+    display: inline-block
+    transform: rotate(-90deg)
+    color: #ff0000
+    font-family: "Proxima Nova - Regular"
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.8px
+    text-transform: uppercase
+
+  &-quest
+    display: inline-block
+    color: #ffffff
+    font-family: "Proxima Nova - Regular"
+    font-size: 60px
+    font-weight: 400
+    letter-spacing: 3px
+    line-height: 50px
+
+  &-wrap
+    display: grid
+    grid-template-columns: 500px 306px 306px
+    padding-left: 140px
+    margin-top: 41px
+
+
+  &-event
+
+    &__wrap
+      &:nth-child(2)
+        margin-top: 56px
+    &__title
+
+    &__skill
+      margin-top: 42px
+
+    &__numb
+      color: #fd00bb
+      font-family: "Proxima Nova - Regular"
+      font-size: 50px
+      font-weight: 400
+    &__desc
+      color: #ff9e00
+      font-family: "Proxima Nova - Regular"
+      font-size: 20px
+      font-weight: 700
+      line-height: 28px
+.footer
+  background: url("../img/1_Background (1).png")
+  height: 500px
+
+
+  &-line
+    width: 100%
+    height: 1px
+    border: 1px solid #979797
+    opacity: 0.2
+    margin-bottom: 59px
+  &-wrap
+    display: grid
+    grid-template-columns: 500px 360px 360px
+.social
+  &-copy
+    margin-top: 35px
+    color: #777777
+    font-family: "Proxima Nova - Regular"
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+  &-icons
+    margin-top: 49px
+
+  &-icon
+    display: inline-block
+    margin-right: 30px
+.position
+  color: #777777
+  font-family: "Proxima Nova - Semibold"
+  font-size: 16px
+  font-weight: 600
+
+  &-text
+    margin-top: 17px
+    &:nth-child(4)
+      margin-top: 47px
+  &-group
+    margin-top: 17px
+    &:nth-child(5)
+      margin-top: 47px
