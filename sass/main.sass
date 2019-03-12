@@ -27,8 +27,8 @@ a, a:focus, a:active, a:hover
   width: 1171px
 .header
   min-height: 100vh
+  position: relative
   background: url("../img/bg.png") no-repeat top
-
 
 
 
@@ -58,11 +58,18 @@ a, a:focus, a:active, a:hover
 .info
   margin-top: 57px
   display: block
+
+  &-radio
+    position: absolute
+    cursor: pointer
+    right: 36px
+    bottom: 0
+
   &-year
     display: inline-block
     transform: rotate(-90deg)
     color: #00e4ff
-    font-family: "Proxima Nova - Regularg"
+    font-family: "Proxima Nova - Regular"
     font-size: 50px
     font-weight: 700
     letter-spacing: 1.25px
@@ -173,12 +180,15 @@ a, a:focus, a:active, a:hover
     margin-top: 33px
 
   &-line
+    margin-top: 12px
+    display: grid
     width: 100%
     height: 40px
     border-radius: 20px
     background-image: linear-gradient(270deg, #face37 0%, #f219bf 19%, #483bfa 40%, #483bfa 65%, #f81e3b 100%)
     &__list
       display: grid
+      align-items: center
       grid-template-columns: 25% 25% 25% 25%
       color: #ffffff
       font-family: "Proxima Nova - Regular"
@@ -186,11 +196,23 @@ a, a:focus, a:active, a:hover
       font-weight: 700
       letter-spacing: 0.9px
       line-height: 24px
+    &__li
+      &:nth-child(1)
+        padding-left: 15px
   &-list
+    margin-top: 22px
     display: grid
     grid-template-columns: 25% 25% 25% 25%
     font-family: "Proxima Nova - Regular"
     &__li
+      color: #141018
+      font-family: "Proxima Nova - Regular"
+      font-size: 18px
+      font-weight: 400
+      letter-spacing: 0.9px
+      line-height: 24px
+      &:nth-child(1)
+        padding-left: 15px
 
   &-text
     margin-top: 10px
@@ -201,10 +223,32 @@ a, a:focus, a:active, a:hover
     font-size: 20px
     font-weight: 700
     line-height: 28px
-
+  &-dates
+    display: grid
+    grid-template-columns: 25% 25% 25% 25%
+  &-date
+    &:nth-child(1)
+      padding-left: 15px
+    &__numb
+      color: #f81e3b
+      font-family: "Proxima Nova - Regular"
+      font-size: 60px
+      font-weight: 700
+      letter-spacing: 3px
+    &__text
+      color: #f81e3b
+      font-family: "Proxima Nova - Regular"
+      font-size: 20px
+      font-weight: 700
+      letter-spacing: 1px
 .loot
   background: url("../img/1_Background (1).png")
   height: 800px
+  position: relative
+  &-youtube
+    position: absolute
+    left: 50%
+    top: -30px
   &-wrap
     display: inline-block
   &-con
@@ -270,6 +314,9 @@ a, a:focus, a:active, a:hover
   font-weight: 400
   letter-spacing: 0.8px
   text-transform: uppercase
+.judges-wrap
+  display: inline-block
+
 .judges-quest
   display: inline-block
   color: #ffffff
@@ -290,7 +337,6 @@ a, a:focus, a:active, a:hover
   background: url("../img/1_Background (1).png")
   height: 700px
   padding-top: 100px
-
   position: relative
   &-arrows
     display: inline-block
@@ -305,6 +351,8 @@ a, a:focus, a:active, a:hover
     &__right
       display: inline-block
       cursor: pointer
+  &-blocks
+    padding-left: 70px
   &-block
     display: inline-block
     margin-right: 177px
@@ -455,3 +503,8 @@ a, a:focus, a:active, a:hover
     margin-top: 17px
     &:nth-child(5)
       margin-top: 47px
+
+.blue
+  color: #483bfa
+.orange
+  color: #f81e3b
