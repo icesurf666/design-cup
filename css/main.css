@@ -72,9 +72,6 @@ a, a:focus, a:active, a:hover {
   .container {
     width: 100%; } }
 
-.active {
-  color: #fd00bb; }
-
 .container {
   margin: 0 auto;
   width: 1171px; }
@@ -92,7 +89,6 @@ a, a:focus, a:active, a:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #777777;
   font-family: "Proxima Nova - Semibold";
   font-size: 16px;
   font-weight: 600; }
@@ -107,6 +103,8 @@ a, a:focus, a:active, a:hover {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .menu-list__link {
+      color: #777777; }
   .menu-auth {
     display: -webkit-box;
     display: -webkit-flex;
@@ -116,6 +114,8 @@ a, a:focus, a:active, a:hover {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    .menu-auth__link {
+      color: #fd00bb; }
     .menu-auth__li {
       margin-right: 30px; }
 
@@ -161,7 +161,17 @@ a, a:focus, a:active, a:hover {
   .info-button {
     margin-top: 52px;
     text-align: center; }
+    .info-button__wrap {
+      position: relative;
+      display: inline-block;
+      width: 290px;
+      height: 70px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      background-color: #00e4ff; }
     .info-button__btn {
+      position: relative;
+      bottom: 6px;
       font-family: "Proxima Nova - Regular";
       width: 280px;
       height: 70px;
@@ -176,6 +186,8 @@ a, a:focus, a:active, a:hover {
       font-size: 20px;
       font-weight: 700;
       text-transform: uppercase; }
+      .info-button__btn:hover {
+        bottom: 4px; }
   .info-sponsors {
     margin-top: 51px;
     text-align: center; }
@@ -187,7 +199,7 @@ a, a:focus, a:active, a:hover {
 .about {
   height: 820px;
   padding-top: 89px;
-  background: url("../img/1_Background (1).png") no-repeat top center; }
+  background: url("../img/bg-1.png") no-repeat top center fixed; }
   .about-wrap {
     display: grid;
     padding-left: 100px;
@@ -321,14 +333,15 @@ a, a:focus, a:active, a:hover {
     letter-spacing: 1px; }
 
 .loot {
-  background: url("../img/1_Background (1).png");
-  height: 800px;
+  background: url("../img/bg-2.png") no-repeat;
+  height: 1500px;
   position: relative; }
   .loot-youtube {
     position: absolute;
     left: 50%;
     top: -30px; }
   .loot-wrap {
+    padding-top: 135px;
     display: inline-block; }
   .loot-con {
     display: -webkit-box;
@@ -430,8 +443,6 @@ a, a:focus, a:active, a:hover {
   line-height: 26px; }
 
 .slider {
-  background: url("../img/1_Background (1).png");
-  height: 700px;
   padding-top: 100px;
   position: relative; }
   .slider-arrows {
@@ -468,9 +479,10 @@ a, a:focus, a:active, a:hover {
 
 .part {
   padding-top: 270px;
-  text-align: center;
-  background: url("../img/1_Background (1).png"); }
+  height: 1400px;
+  background: url("../img/bg-3.png"); }
   .part-year {
+    text-align: center;
     color: #ffffff;
     font-family: "Proxima Nova - Regular";
     font-size: 20px;
@@ -478,8 +490,10 @@ a, a:focus, a:active, a:hover {
     letter-spacing: 1px;
     text-transform: uppercase; }
   .part-logo {
-    margin-top: 31px; }
+    margin-top: 31px;
+    text-align: center; }
   .part-text {
+    text-align: center;
     margin-top: 21px;
     color: #ffffff;
     font-family: "Proxima Nova - Regular";
@@ -487,8 +501,21 @@ a, a:focus, a:active, a:hover {
     font-weight: 400;
     letter-spacing: 0.9px;
     line-height: 26px; }
-  .part-btn {
+  .part-button {
     margin-top: 12px;
+    text-align: center; }
+    .part-button__wrap {
+      position: relative;
+      display: inline-block;
+      width: 290px;
+      height: 70px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      background-color: #ff0000; }
+  .part-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
     border: 0;
     width: 280px;
     height: 70px;
@@ -503,11 +530,11 @@ a, a:focus, a:active, a:hover {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase; }
+    .part-btn:hover {
+      bottom: 4px; }
 
 .sponsors {
-  padding-top: 330px;
-  background: url("../img/1_Background (1).png");
-  height: 900px; }
+  padding-top: 330px; }
   .sponsors-title {
     display: inline-block;
     -webkit-transform: rotate(-90deg);
@@ -575,6 +602,13 @@ a, a:focus, a:active, a:hover {
 .social-icon {
   display: inline-block;
   margin-right: 30px; }
+  .social-icon:hover {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s; }
 
 .position {
   color: #777777;

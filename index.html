@@ -18,14 +18,14 @@
 				<div class="menu">
 					<a href="index.html" class="menu-logo"><img src="img/Bitmap.png" class="menu-logo__img" alt=""></a>
 					<ul class="menu-list">
-						<li class="menu-list__li active"><a href="">О турнире</a></li>
-						<li class="menu-list__li"><a href="">Правила</a></li>
-						<li class="menu-list__li"><a href="">Новости</a></li>
-						<li class="menu-list__li"><a href="">Архив</a></li>
+						<li class="menu-list__li"><a href="" class="menu-list__link">О турнире</a></li>
+						<li class="menu-list__li"><a href="" class="menu-list__link">Правила</a></li>
+						<li class="menu-list__li"><a href="" class="menu-list__link">Новости</a></li>
+						<li class="menu-list__li"><a href="" class="menu-list__link">Архив</a></li>
 					</ul>
 					<ul class="menu-auth">
-						<li class="menu-auth__li active"><a href="">Регистрация</a></li>
-						<li class="menu-auth__li active"><a href="">Войти</a></li>
+						<li class="menu-auth__li"><a href="" class="menu-auth__link">Регистрация</a></li>
+						<li class="menu-auth__li"><a href="" class="menu-auth__link">Войти</a></li>
 					</ul>
 				</div>
 				<div class="info">
@@ -39,7 +39,8 @@
 						октября <img src="img/dates.png" alt=""> декабря
 					</div>
 					<div class="info-button">
-						<button class="info-button__btn">Участвовать</button></div>
+                        <div class="info-button__wrap">
+                            <button class="info-button__btn">Участвовать</button></div></div>
 					<div class="info-sponsors">
 						<img src="img/12-layers.png" alt="">
 					</div>
@@ -48,6 +49,8 @@
 			</div>
 		</header>
 		<div class="about">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg-1.png">
+
 			<div class="container">
 					<div class="about-info">о проекте</div>
 						<div class="about-title">
@@ -173,10 +176,10 @@
 				<div class="loot-block__place orange">место</div>
 			</div>
 		</div>
-	</div>
+
 
 		<div class="judges">
-<div class="container">
+
 			<div class="judges-title">жюри</div>
 	<div class="judges-wrap">
 			<div class="judges-quest">А судьи кто?</div>
@@ -184,7 +187,7 @@
 	</div>
 		</div>
 		</div>
-		</div>
+
 
 
 		<div class="slider">
@@ -220,6 +223,7 @@
 				</div>
 			</div>
 		</div>
+</div>
 <div class="part">
 	<div class="container">
 		<div class="part-year">
@@ -227,9 +231,13 @@
 		</div>
 		<div class="part-logo"><img src="img/part.png" alt=""></div>
 		<div class="part-text">Съешь ещё этих мягких<br> французских булок и забери<br> эти чёртовы призы!</div>
-		<button class="part-btn">участвовать</button>
+		<div class="part-button">
+            <div class="part-button__wrap">
+        <button class="part-btn">участвовать</button>
+            </div>
+        </div>
 	</div>
-</div>
+
 		<div class="sponsors">
 			<div class="container">
 				<div class="sponsors-title">организаторы</div>
@@ -265,6 +273,7 @@
 				</div>
 			</div>
 		</div>
+</div>
 		<div class="footer">
 			<div class="container">
 				<div class="footer-line"></div>
@@ -309,5 +318,6 @@
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"></script>
 		<script src="js/common.js"></script>
+        <script src="js/parallax.min.js"></script>
 	</body>
 </html>

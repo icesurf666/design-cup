@@ -1,5 +1,6 @@
 
 
+
     $('.slider-blocks').slick({
         dots: false,
         infinite: true,
@@ -14,3 +15,4 @@
     $(".slider-arrows__right").click(function() {
         $('.slider-blocks').slick("next");
     });
+
