@@ -27,15 +27,13 @@ a, a:focus, a:active, a:hover
   width: 1171px
 .header
   min-height: 100vh
-  position: relative
-  background: url("../img/bg.png") no-repeat top
 
 
 
 
 
 
-.parallax-window
+
 
 .menu
   height: 50px
@@ -45,6 +43,16 @@ a, a:focus, a:active, a:hover
   font-family: "Proxima Nova - Semibold"
   font-size: 16px
   font-weight: 600
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: calc(100% - 25%)
+    height: 50px
+    border-radius: 0 0 100px
+    background-color: #02070b
+    z-index: -1
   &-logo
     display: inline-block
 
@@ -123,14 +131,13 @@ a, a:focus, a:active, a:hover
     margin-top: 51px
     text-align: center
   &-mouse
-    margin-top: 44px
-    padding-bottom: 21px
+    margin-top: 24px
     text-align: center
 
 .about
-  height: 820px
+
   padding-top: 89px
-  background: url("../img/bg-1.png") no-repeat top center fixed
+  background: url("../img/bg-1.png") no-repeat top center
   &-wrap
     display: grid
     padding-left: 100px
@@ -192,14 +199,25 @@ a, a:focus, a:active, a:hover
     font-size: 60px
     font-weight: 400
     letter-spacing: 3px
+    padding-bottom: 31px
 
 .timetable
-  height: 439px
   background-color: #ffffff
+  &-sketch
+    bottom: 22px
+    right: 8px
+    display: inline-block
+    position: absolute
+
+  &-sk
+    display: inline-block
+    position: absolute
+    top: 0
+    right: -10px
   &-wrap
     margin-top: 33px
-
   &-line
+    position: relative
     margin-top: 12px
     display: grid
     width: 100%
@@ -235,8 +253,8 @@ a, a:focus, a:active, a:hover
         padding-left: 15px
 
   &-text
-    margin-top: 10px
-    padding-bottom: 81px
+    margin-top: 30px
+    padding-bottom: 61px
     text-align: center
     color: #f81e3b
     font-family: "Proxima Nova - Regular"
@@ -247,37 +265,38 @@ a, a:focus, a:active, a:hover
     display: grid
     grid-template-columns: 25% 25% 25% 25%
   &-date
+    color: #f81e3b
     &:nth-child(1)
       padding-left: 15px
     &__numb
-      color: #f81e3b
+
       font-family: "Proxima Nova - Regular"
       font-size: 60px
       font-weight: 700
       letter-spacing: 3px
     &__text
-      color: #f81e3b
+
       font-family: "Proxima Nova - Regular"
       font-size: 20px
       font-weight: 700
       letter-spacing: 1px
 .loot
   background: url("../img/bg-2.png") no-repeat
-  height: 1500px
   position: relative
   &-youtube
     position: absolute
-    left: 50%
+    left: 47%
     top: -30px
   &-wrap
-    padding-top: 135px
+
     display: inline-block
-  &-con
+  &-cont
+    padding-top: 120px
     display: flex
-    align-items: center
+    align-items: flex-start
 
   &-title
-    display: inline-block
+    padding-right: 41px
     transform: rotate(-90deg)
     color: #fd00bb
     font-family: "Proxima Nova - Regular"
@@ -325,9 +344,12 @@ a, a:focus, a:active, a:hover
       font-size: 20px
       font-weight: 900
       letter-spacing: 1px
+.judges
+  margin-top: 193px
+  display: flex
+  align-items: center
 
 .judges-title
-  display: inline-block
   transform: rotate(-90deg)
   color: #01cee6
   font-family: "Proxima Nova - Regular"
@@ -347,6 +369,7 @@ a, a:focus, a:active, a:hover
   letter-spacing: 3px
   line-height: 50px
 .judges-desc
+  margin-top: 10px
   color: #ffffff
   font-family: "Proxima Nova - Regular"
   font-size: 18px
@@ -356,11 +379,12 @@ a, a:focus, a:active, a:hover
 
 .slider
   padding-top: 100px
+  padding-bottom: 10px
   position: relative
   &-arrows
     display: inline-block
     position: absolute
-    top: 0
+    top: -55px
     right: 100px
     &__left
       display: inline-block
@@ -384,6 +408,7 @@ a, a:focus, a:active, a:hover
       font-size: 20px
       font-weight: 600
       line-height: 28px
+
     &__company
       color: #fd2aa2
       font-family: "Proxima Nova - Black"
@@ -393,8 +418,10 @@ a, a:focus, a:active, a:hover
       text-transform: uppercase
 .part
   padding-top: 270px
-  height: 1400px
-  background: url("../img/bg-3.png")
+  background: url("../img/13-layers (1).png")
+  background-position: 50% 100%
+  padding-bottom: 130px
+
 
   &-year
     text-align: center
@@ -419,7 +446,7 @@ a, a:focus, a:active, a:hover
     letter-spacing: 0.9px
     line-height: 26px
   &-button
-    margin-top: 12px
+    margin-top: 28px
     text-align: center
     &__wrap
       position: relative
@@ -499,8 +526,6 @@ a, a:focus, a:active, a:hover
 .footer
   background: url("../img/1_Background (1).png")
   height: 500px
-
-
   &-line
     width: 100%
     height: 1px
@@ -545,5 +570,45 @@ a, a:focus, a:active, a:hover
 .blue
   color: #483bfa
 .orange
-  color: #f81e3b
+  color: #ff9e00
+.pink
+  color: #fd00bb
+.purple
+  color: #8300ff
 
+.fullwidth-bg
+  position: relative
+  height: 100%
+  width: 100%
+
+  overflow: hidden
+  z-index: 1
+
+
+.fullwidth-bg__video
+  position: absolute
+  top: 0
+  margin: 0 auto
+  width: 100%
+
+
+.video-layer
+  background: rgba(0,0,0,0.6)
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 5
+video
+  max-width: 100%
+  vertical-align: bottom
+
+
+//@media (max-width: 767px)
+//.fullscreen-bg
+//  background: url('../img/bg.png') center center / cover no-repeat
+//
+//
+//.fullscreen-bg__video
+//  display: none
